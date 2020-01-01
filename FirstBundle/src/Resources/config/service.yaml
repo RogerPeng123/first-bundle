@@ -1,0 +1,13 @@
+services:
+  # default configuration for services in *this* file
+  _defaults:
+    autowire: true      # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+    
+  Roger\Test\Bundle\First\:
+    resource: '../*'
+    exclude: '../{DependencyInjection,Entity,Repository}'
+
+  Roger\Test\Bundle\First\Controller\:
+    resource: '../../Controller'
+    tags: ['controller.service_arguments']

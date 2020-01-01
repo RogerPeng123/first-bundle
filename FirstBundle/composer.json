@@ -1,0 +1,30 @@
+{
+  "name": "roger/first-bundle",
+  "type": "symfony-bundle",
+  "description": "我的第一个bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roger Peng",
+      "email": "aileshang0226@163.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "symfony/framework-bundle": "5.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Roger\\Test\\Bundle\\First\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-1.0": "1.0.x-dev"
+    }
+  }
+}
